@@ -1,0 +1,1 @@
+python finetune_sup_head_regression_fst.py esm1b_t33_650M_UR50S d2/d2_fasta_clean S2C5_regression --num_classes 1 --include mean per_tok --toks_per_batch 2048 --lr 1e-3 --rank 4 --lr-factor 10 --split_file d2/d2_1.pkl --seed 1 --adv --gamma 1e-6 --load-pretrained sap.pt
